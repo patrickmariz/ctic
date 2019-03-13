@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 gem 'activeadmin'
+gem 'inherited_resources'
 gem 'devise'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
