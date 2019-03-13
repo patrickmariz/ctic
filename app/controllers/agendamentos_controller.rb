@@ -1,6 +1,5 @@
 class AgendamentosController < ApplicationController
   before_action :set_agendamento, only: [:show, :edit, :update, :destroy]
-
   # GET /agendamentos
   # GET /agendamentos.json
   def index
@@ -25,7 +24,7 @@ class AgendamentosController < ApplicationController
   # POST /agendamentos.json
   def create
     @agendamento = Agendamento.new(agendamento_params)
-
+    
     respond_to do |format|
       if @agendamento.save
         format.html { redirect_to @agendamento, notice: 'Agendamento feito com sucesso!' }
