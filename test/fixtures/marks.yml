@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  data: 2019-03-14 04:29:39
+  servico_id: 
+
+two:
+  name: MyString
+  data: 2019-03-14 04:29:39
+  servico_id: 

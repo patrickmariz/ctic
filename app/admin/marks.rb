@@ -1,5 +1,5 @@
-ActiveAdmin.register Agendamento do
-    permit_params :data, :cliente, :servico
+ActiveAdmin.register Mark do
+    permit_params :list, :name, :data, :servico_id
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #

@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Serviços Agendados</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Cliente</th>
+      <th>Data</th>
+      <th>Serviço</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @marks.each do |mark| %>
+      <tr>
+        <td><%= mark.name %></td>
+        <td><%= mark.data %></td>
+        <td><%= mark.servico_nome %></td>
+        <td><%= link_to 'Mostrar', mark %></td>
+        <td><%= link_to 'Editar', edit_mark_path(mark) %></td>
+        <td><%= link_to 'Cancelar Agendamento', mark, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Novo agendamento', new_mark_path %>
